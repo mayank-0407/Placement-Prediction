@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Predict</h1>
+    <form action="{{ url_for('predict') }}" method="post">
+        <input type="text" name="gender">
+        <input type="text" name="sscp">
+        <input type="text" name="sscb">
+        <input type="text" name="hscp">
+        <input type="text" name="hscb">
+        <input type="text" name="hscs">
+        <input type="text" name="cgpa">
+        <input type="text" name="degreet">
+        <input type="text" name="workex">
+        <input type="text" name="etestp">
+        <input type="text" name="specialisation">
+        <input type="text" name="masters">
+        <button type="submit">Predict</button>
+    </form>
+    {{prediction_text}}
+</body>
+</html>
